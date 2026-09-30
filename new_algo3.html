@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Kshetra - CodeWarz Algos Round</title>
+  <link rel="stylesheet" href="./css/new_styles.css" />
+</head>
+
+<body>
+  <div class="head-cont">
+    <h2>AI Kshetra - CodeWarz Algos Round</h2>
+    <p id="timer">03:00</p>
+    <p id="result"></p>
+  </div>
+
+  <div class="main-container">
+    <div class="scroll-container algo-container" id="algo">
+      <div class="editor-header">
+        <div class="tab"><span class="dot"></span>Algorithm</div>
+      </div>
+      <!-- ALGO_DIV_STARTS -->
+      <div class="algo">
+        <p><span class="keyword">1. </span> Function dijkstra(graph, source):</p>
+        <p><span class="keyword">2. </span> &nbsp;&nbsp;&nbsp;distance = [infinity] * len(graph)</p>
+        <p><span class="keyword">3. </span> &nbsp;&nbsp;&nbsp;visited = [False] * len(graph)</p>
+        <p><span class="keyword">4. </span> &nbsp;&nbsp;&nbsp;distance[source] = <span class="dropzone"
+            data-answer="AA"></span></p>
+        <p><span class="keyword">5. </span> &nbsp;&nbsp;&nbsp;for i in range(len(graph)):</p>
+        <p><span class="keyword">6. </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current = -1</p>
+        <p><span class="keyword">7. </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for vertex in range(len(graph)):</p>
+        <p><span class="keyword">8. </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if not visited[vertex]
+          and (current == -1 or distance[vertex] &lt; distance[current]):</p>
+        <p><span class="keyword">9. </span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current = vertex</p>
+        <p><span class="keyword">10.</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if current == -1:</p>
+        <p><span class="keyword">11.</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</p>
+        <p><span class="keyword">12.</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visited[current] = True</p>
+        <p><span class="keyword">13.</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for neighbor in range(len(graph)):</p>
+        <p><span class="keyword">14.</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if <span
+            class="dropzone" data-answer="BB"></span>:</p>
+        <p><span class="keyword">15.</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newDistance = <span class="dropzone"
+            data-answer="CC"></span></p>
+        <p><span class="keyword">16.</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if
+          <span class="dropzone" data-answer="DD"></span>:
+        </p>
+        <p><span class="keyword">17.</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distance[neighbor] =
+          <span class="dropzone" data-answer="EE"></span>
+        </p>
+        <p><span class="keyword">18.</span> &nbsp;&nbsp;&nbsp;return distance</p>
+      </div>
+      <!-- ALGO_DIV_ENDS -->
+    </div>
+
+    <!-- BLOCKS_DIV_STARTS -->
+    <div class="scroll-container block-container" id="blocks">
+      <div class="blocks-header">Code Blocks</div>
+      <div class="block" draggable="true" data-value="graph[current][neighbor] != 0" data-key="BB">
+        graph[current][neighbor] != 0</div>
+      <div class="block" draggable="true" data-value="newDistance &lt; distance[neighbor]" data-key="DD">newDistance
+        &lt; distance[neighbor]</div>
+      <div class="block" draggable="true" data-value="newDistance" data-key="EE">newDistance</div>
+      <div class="block" draggable="true" data-value="distance[current] + graph[current][neighbor]" data-key="CC">
+        distance[current] + graph[current][neighbor]</div>
+      <div class="block" draggable="true" data-value="0" data-key="AA">0</div>
+    </div>
+    <!-- BLOCKS_DIV_ENDS -->
+  </div>
+
+  <div>
+    <button id="start-btn">Start Solving</button>
+  </div>
+
+  <div class="status-bar">
+    <span>&copy; AI Kshetra - CodeWarz Algos Round - Created by <a href="#">Nihar GNV</a> </span>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

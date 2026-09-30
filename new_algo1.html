@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Kshetra - CodeWarz Algos Round</title>
+  <link rel="stylesheet" href="./css/new_styles.css" />
+</head>
+
+<body>
+  <div class="head-cont">
+    <h2>AI Kshetra - CodeWarz Algos Round</h2>
+    <p id="timer">03:00</p>
+    <p id="result"></p>
+  </div>
+
+  <div class="main-container">
+    <div class="scroll-container algo-container" id="algo">
+      <div class="editor-header">
+        <div class="tab"><span class="dot"></span>Algorithm</div>
+      </div>
+      <!-- ALGO_DIV_STARTS -->
+      <div class="algo">
+        <p><span class="keyword">1. </span> Function quickSort(arr, low, high):</p>
+        <p><span class="keyword">2. </span> &nbsp;&nbsp;&nbsp;if <span class="dropzone" data-answer="AA"></span>:</p>
+        <p><span class="keyword">3. </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pivot = arr[high]</p>
+        <p><span class="keyword">4. </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index = low - 1</p>
+        <p><span class="keyword">5. </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for i in range(low, high):</p>
+        <p><span class="keyword">6. </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if <span
+            class="dropzone" data-answer="BB"></span>:</p>
+        <p><span class="keyword">7. </span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="dropzone"
+            data-answer="CC"></span></p>
+        <p><span class="keyword">8. </span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[index], arr[i] = arr[i],
+          arr[index]</p>
+        <p><span class="keyword">9. </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[index + 1], arr[high] = arr[high],
+          arr[index + 1]</p>
+        <p><span class="keyword">10.</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quickSort(arr, low, index - 1)</p>
+        <p><span class="keyword">11.</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quickSort(arr, index + 1, high)</p>
+        <p><span class="keyword">12.</span> &nbsp;&nbsp;&nbsp;return <span class="dropzone" data-answer="DD"></span></p>
+      </div>
+      <!-- ALGO_DIV_ENDS -->
+    </div>
+
+    <!-- BLOCKS_DIV_STARTS -->
+    <div class="scroll-container block-container" id="blocks">
+      <div class="blocks-header">Code Blocks</div>
+      <div class="block" draggable="true" data-value="arr" data-key="DD">arr</div>
+      <div class="block" draggable="true" data-value="index += 1" data-key="CC">index += 1</div>
+      <div class="block" draggable="true" data-value="arr[i] &lt;= pivot" data-key="BB">arr[i] &lt;= pivot</div>     
+      <div class="block" draggable="true" data-value="low &lt; high" data-key="AA">low &lt; high</div>
+    </div>
+    <!-- BLOCKS_DIV_ENDS -->
+  </div>
+
+  <div>
+    <button id="start-btn">Start Solving</button>
+  </div>
+
+  <div class="status-bar">
+    <span>&copy; AI Kshetra - CodeWarz Algos Round - Created by <a href="#">Nihar GNV</a> </span>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
